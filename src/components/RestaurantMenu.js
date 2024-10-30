@@ -3,6 +3,7 @@ import Shimmer from "./Shimmer"
 import { useParams } from "react-router-dom"
 import RestaurantCateogory from "./RestaurantCategory"
 import { useState } from "react"
+import React from "react"
 
 const RestaurantMenu = () => {
   const { resId } = useParams()
