@@ -9,7 +9,3 @@
 🗑️ Removing Items from Cart : Users can remove individual items from their shopping cart without clearing the entire cart.  
 🛒 Clear Cart Functionality : Provide an option for users to clear their entire shopping cart with a single action.  
 
-
-
-
-[<img src="src/images/Main page.PNG" alt="gmail" width="60" height="60"/>](src/images/Main page.PNG) 
