@@ -15,8 +15,11 @@
  ## TikTok Game (We can play when the internet is down)  
  <img src="src/images/TicTacToeGame.PNG" alt="js" width="600" height="400"/>  
 
- ## Top Rated Restaurants
+ ## Top Rated Restaurants (Restaurants having rating more than 4.3)
  <img src="src/images/Top Rated Restaurants.PNG" alt="js" width="600" height="400"/>  
+
+ ## Restaurant Menu
+<img src="src/images/RestaurantMenu.PNG" alt="js" width="600" height="400"/>  
 
 
 
