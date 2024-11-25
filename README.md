@@ -28,23 +28,13 @@
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
 ## CONCEPTS USED
-### Functional Components
-### React Hooks
-### Lazy Loading
-### Code Splitting
-### React Router DOM
-### Redux  
-
-
-
-| No. |  | 
 |-----|---------------|
-| 1   | **###**         
-| 2   | **###**        
-| 3   | **###**      
-| 4   | **###**      
-| 5   | **###**     
-| 6   | **###**    
+| 1   | **Functional Components**         
+| 2   | **React Hooks**        
+| 3   | **Lazy Loading**      
+| 4   | **Code Splitting**      
+| 5   | **React Router DOM**     
+| 6   | **Redux**    
 
 
 
