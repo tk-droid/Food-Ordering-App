@@ -31,11 +31,11 @@
 
 | No. |  |                        |
 |-----|---------------|-----------------------------------|
-| 1   | **Functional Components**         |  |
-| 2   | **Hooks**        |               |
-| 3   | **Lazy Loading**       |                   |
-| 4   | **Code Splitting**      |         |
-| 5   | **React Router DOM**     |              |
+| 1   | **Functional Components** ||
+| 2   | **Hooks**||
+| 3   | **Lazy Loading**||
+| 4   | **Code Splitting**||
+| 5   | **React Router DOM**||
   
 
 
