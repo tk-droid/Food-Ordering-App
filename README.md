@@ -29,13 +29,14 @@
 
 ## CONCEPTS USED  
 
-|-----|---------------|
-| 1   | **Functional Components**         
-| 2   | **React Hooks**        
-| 3   | **Lazy Loading**      
-| 4   | **Code Splitting**      
-| 5   | **React Router DOM**     
-| 6   | **Redux**    
+| No. | Heading Level | Description                       |
+|-----|---------------|-----------------------------------|
+| 1   | **Functional Components**         | Main Project Overview             |
+| 2   | **Hooks**        | Introduction                      |
+| 3   | **Lazy Loading**       | Features                          |
+| 4   | **Code Splitting**      | Installation Instructions         |
+| 5   | **React Router DOM**     | Usage Instructions                |
+  
 
 
 
