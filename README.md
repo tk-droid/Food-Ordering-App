@@ -27,7 +27,8 @@
 ### Clear Cart
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
-## CONCEPTS USED
+## CONCEPTS USED  
+
 |-----|---------------|
 | 1   | **Functional Components**         
 | 2   | **React Hooks**        
