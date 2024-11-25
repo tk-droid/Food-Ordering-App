@@ -29,7 +29,7 @@
 
 ## CONCEPTS USED  
 
-| No. | Heading Level | Description                       |
+| No. |  | Description                       |
 |-----|---------------|-----------------------------------|
 | 1   | **Functional Components**         | Main Project Overview             |
 | 2   | **Hooks**        | Introduction                      |
