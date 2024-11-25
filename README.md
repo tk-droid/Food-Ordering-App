@@ -27,10 +27,10 @@
 ## Clear Cart
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
-| Heading 1           | Heading 2           |
+| Main Page           | Search Functionality            |
 |---------------------|---------------------|
 | ## First Heading    | ## Second Heading   |
-| <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> | <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> |
+| <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> | <img src="src/images/Search Functionality With Difffernt fontsize.PNG" alt="Search" width="600" height="400"/> |
 
 
 
