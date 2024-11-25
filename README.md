@@ -1,6 +1,6 @@
 ## You can view the live website here : https://foodorderappbytaif.netlify.app/
 
-  ## Main Page  
+  ### Main Page  
  <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400">  
  
  ## Search Functionality  
@@ -27,10 +27,6 @@
 ## Clear Cart
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
-| ## Main Page           | ## Search Functionality            |
-|---------------------|---------------------|
-|     |    |
-| <img src="src/images/Main page.PNG" alt="MainPage" width="700" height="500"> | <img src="src/images/Search Functionality With Difffernt fontsize.PNG" alt="Search" width="700" height="500"/> |
 
 
 
