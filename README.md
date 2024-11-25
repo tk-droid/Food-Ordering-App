@@ -32,18 +32,21 @@
 | No. |||
 |-----|---------------|-----------------------------------|
 | 1   | **Functional Components** ||
+| 1   | **Class Based Components** ||
 | 2   | **Hooks**||
 | 3   | **Lazy Loading**||
 | 4   | **Code Splitting**||
 | 5   | **React Router DOM**||
-| 5   | **React Router DOM**||
-| 1   | **Functional Components** ||
-| 2   | **Hooks**||
-| 3   | **Lazy Loading**||
-| 4   | **Code Splitting**||
-| 5   | **React Router DOM**||
-| 5   | **React Router DOM**||
-  
+| 6   | **Destructuring**||
+| 7   | **Map()** ||
+| 8   | **Filter()**||
+| 9   | **Create Browser Router**||
+| 10   | **Outlet**||
+| 11   | **High Order Components**||
+| 12   | **Custom Hooks**||
+| 13   | **Props Drilling**||
+| 14   | **Unit Testing**||
+| 15   | **Integration Testing**||  
 
 
 
