@@ -25,7 +25,13 @@
 <img src="src/images/RestaurantMenu Drop Down with add btn.PNG" alt="Accordion" width="600" height="400"/>  
 
 ## Clear Cart
-<img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>
+<img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
+
+| Heading 1           | Heading 2           |
+|---------------------|---------------------|
+| ## First Heading    | ## Second Heading   |
+| ![Image 1](src/images/Main page.PNG) | ![Image 2](src/images/Main page.PNG) |
+
 
 
 
