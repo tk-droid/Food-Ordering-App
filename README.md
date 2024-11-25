@@ -29,7 +29,7 @@
 
 ## CONCEPTS USED  
 
-| No. |||
+| No. | Name ||
 |-----|---------------|-----------------------------------|
 | 1   | **Functional Components** ||
 | 1   | **Class Based Components** ||
