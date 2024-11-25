@@ -11,7 +11,9 @@
 
  ## Contact Page  
  <img src="src/images/ContactPage.PNG" alt="js" width="600" height="400"/>  
- 
+
+ ## TikTok Game (We can play when in the internet is down)  
+ <img src="src/images/TicTacToeGame.PNG" alt="js" width="600" height="400"/>  
 
 
 
