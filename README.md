@@ -28,11 +28,11 @@
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
 ## CONCEPTS USED
-### Functional Components  
-### React Hooks  
-### Lazy Loading  
-### Code Splitting  
-### React Router DOM  
+### Functional Components
+### React Hooks
+### Lazy Loading
+### Code Splitting
+### React Router DOM
 ### Redux
 
 
