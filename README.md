@@ -27,7 +27,7 @@
 ## Clear Cart
 <img src="src/images/clear cart.PNG" alt="ClearCart" width="600" height="400"/>  
 
-| Main Page           | Search Functionality            |
+| ## Main Page           | ## Search Functionality            |
 |---------------------|---------------------|
 |     |    |
 | <img src="src/images/Main page.PNG" alt="MainPage" width="700" height="500"> | <img src="src/images/Search Functionality With Difffernt fontsize.PNG" alt="Search" width="700" height="500"/> |
