@@ -30,7 +30,7 @@
 | Heading 1           | Heading 2           |
 |---------------------|---------------------|
 | ## First Heading    | ## Second Heading   |
-| ![Image 1](src/images/Main page.PNG) | ![Image 2](src/images/Main page.PNG) |
+| <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> | <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> |
 
 
 
