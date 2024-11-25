@@ -29,8 +29,8 @@
 
 | Main Page           | Search Functionality            |
 |---------------------|---------------------|
-| ## First Heading    | ## Second Heading   |
-| <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400"> | <img src="src/images/Search Functionality With Difffernt fontsize.PNG" alt="Search" width="600" height="400"/> |
+|     |    |
+| <img src="src/images/Main page.PNG" alt="MainPage" width="700" height="500"> | <img src="src/images/Search Functionality With Difffernt fontsize.PNG" alt="Search" width="700" height="500"/> |
 
 
 
