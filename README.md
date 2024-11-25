@@ -1,5 +1,5 @@
 ## You can view the live website here : https://foodorderappbytaif.netlify.app/  
 
-![Screenshot](src/images/Main page.PNG)
+![Screenshot](src/assests/Main page.PNG)
 
 
