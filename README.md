@@ -12,8 +12,11 @@
  ## Contact Page  
  <img src="src/images/ContactPage.PNG" alt="js" width="600" height="400"/>  
 
- ## TikTok Game (We can play when in the internet is down)  
+ ## TikTok Game (We can play when the internet is down)  
  <img src="src/images/TicTacToeGame.PNG" alt="js" width="600" height="400"/>  
+
+ ## Top Rated Restaurants
+ <img src="src/images/Top Rated Restaurants.PNG" alt="js" width="600" height="400"/>  
 
 
 
