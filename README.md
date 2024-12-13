@@ -1,4 +1,4 @@
-## Add "CROSS-DOMIAN CORS" Extension to run this website locally without cors issue
+## Add "CROSS-DOMAIN CORS" Extension to run this website locally without cors issue
 ## You can view the live website here : https://foodorderappbytaif.netlify.app/  
 ## Scripts that can be used.
 npm start  
