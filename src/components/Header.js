@@ -14,7 +14,7 @@ const Header = ()=>{
 
    const cartItems = useSelector((store)=>store.cart.items)  // this is sucscribing to a small portion of the store
    
-  // console.log(cartItems)
+  console.log(cartItems)
     return (<div className="flex justify-between bg-green-300 shadow-lg m-2">
               <div className="logo-container">
               {<img className="w-40" src={RESTAURANTCARD_logo}/> }
@@ -29,9 +29,7 @@ const Header = ()=>{
                    <li className="px-3"><Link to="/cart">Cart({cartItems.length})</Link></li> 
                    <button className="Login" onClick={()=>{
                      return btnName==="Login" ? setbtnName("Logout"):setbtnName("Login")
-                   }}>
-                    {btnName}
-                    </button>
+                   }}>{btnName}</button>
                    {/* <li className="px-3 font-bold">User: {loggedInUser}</li> */}
                 </ul>
               </div>

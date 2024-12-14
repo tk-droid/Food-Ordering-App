@@ -1,9 +1,8 @@
-import { Suspense, useState } from "react"
+import { useState } from "react"
 import ItemList from "./ItemList"
-import React, {lazy} from "react"
+import React from "react"
 
-const RestaurantCateogory = ({data, showItems, setShowIndex})=>{ 
-    console.log(data) 
+const RestaurantCateogory = ({data, showItems, setShowIndex, dummy})=>{ // console.log(data) 
     const handleClick = ()=>{
         setShowIndex()
     }
@@ -15,9 +14,7 @@ const RestaurantCateogory = ({data, showItems, setShowIndex})=>{
                 <span className="font-semibold text-lg">{data.title} ({data.categories.length})</span>
                 <span>🔄</span>
                 </div>
-                { showItems && 
-                <ItemList items={data.categories}/>
-                }
+                { showItems && <ItemList items={data.categories} dummy={dummy}/>}
             </div>
         </div>
     )

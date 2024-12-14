@@ -1,18 +1,19 @@
 import React, {lazy, Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom/client"
-import Header from "./components/Header";
-import Body from "./components/Body";
-import About from "./components/About";
-import Error from "./components/Error";
-import RestaurantMenu from "./components/RestaurantMenu";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
+import Contact from "./src/components/Contact";
+import About from "./src/components/About";
+import Error from "./src/components/Error";
+import RestaurantMenu from "./src/components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Shimmer from "./components/Shimmer";
-import UserContext from "./utils/UserContext";
+import Shimmer from "./src/components/Shimmer";
+import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
-import appStore from "./utils/appStore";
-const Grocery = lazy(()=>import("./components/Grocery"))
-const Cart = lazy(()=>import("./components/Cart"))
-const Contact = lazy(()=>import("./components/Contact"))
+import appStore from "./src/utils/appStore";
+import Cart from "./src/components/Cart";
+
+const Grocery = lazy(()=>import("./src/components/Grocery"))
 
 const AppLayout = ()=>{
 const [UserName, SetUserName] = useState()
@@ -31,7 +32,6 @@ useEffect(()=>{
               </div>
         </UserContext.Provider>
         </Provider>
-        
         )
     }
 
@@ -44,9 +44,7 @@ useEffect(()=>{
                 element :  <About/>
             },{
                 path: '/Contact',
-                element :  <Suspense fallback={<div>Loading...</div>}>
-                    <Contact/>
-                    </Suspense>
+                element :  <Contact/>
             },{
                 path: '/',
                 element: <Body/>
@@ -58,13 +56,12 @@ useEffect(()=>{
                 path: '/grocery',
                 element: (<Suspense fallback={<Shimmer/>}>
                     <Grocery/>
-                </Suspense>)
+                </Suspense>
+                )
             },
             {
                 path: "/cart",
-                element: (<Suspense fallback={<div>Loading Cart...</div>}>
-                <Cart/>
-                </Suspense>)
+                element: <Cart/>
             }
         ],
             errorElement: <Error/>

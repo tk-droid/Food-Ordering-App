@@ -2,9 +2,8 @@ import useRestaurantMenu from "../utils/useRestaurantMenu"
 import Shimmer from "./Shimmer"
 import { useParams } from "react-router-dom"
 import RestaurantCateogory from "./RestaurantCategory"
-import { Suspense, useState, lazy } from "react"
+import { useState } from "react"
 import React from "react"
-// const RestaurantCateogory = lazy(()=>import("./RestaurantCategory"))
 
 const RestaurantMenu = () => {
   const { resId } = useParams()
@@ -27,13 +26,12 @@ const RestaurantMenu = () => {
         </p>
       {categories.map((category, index)=> (
         // controlled component, RestaurantMenu is controlling thr state of RestaurantVategory
-        
         <RestaurantCateogory
         key={category?.card?.card?.title}
         data={category?.card?.card}
         showItems = {index=== ShowIndex ? true : false}
         setShowIndex={()=> setShowIndex(index)}
-        //all these are passed here and rec'd in restauranttCard.js
+        dummy={dummy}
         />
         ))}
       </div>

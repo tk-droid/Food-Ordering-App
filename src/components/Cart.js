@@ -23,7 +23,7 @@ const Cart = () => {
                     Clear Cart
                 </button>
             </div>
-            <div className="w-5/12">
+            <div className="w-full">
                 <ItemList items={cartItems} />
             </div>
         </div>
