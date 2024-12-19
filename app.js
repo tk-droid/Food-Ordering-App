@@ -1,3 +1,4 @@
+
 import React, {lazy, Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./src/components/Header";
@@ -12,9 +13,6 @@ import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
-import { HashRouter as Router } from 'react-router-dom';
-
-
 
 const Grocery = lazy(()=>import("./src/components/Grocery"))
 
@@ -77,3 +75,4 @@ root.render(
     <RouterProvider router={appRouter}/>
     </Suspense>
     )
+
