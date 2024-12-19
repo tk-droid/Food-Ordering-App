@@ -22,11 +22,11 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", {
-                headers: {
-                'x-cors-api-key': 'temp_f87322221c175e9fc2dc965203acc930'
-                }
-              });
+            const response = await fetch("/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", { 
+            headers: { 
+                'x-cors-api-key': 'temp_f87322221c175e9fc2dc965203acc930' 
+            } 
+        });
             const json = await response.json();
             setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             setFilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -36,7 +36,6 @@ const Body = () => {
             setLoading(false);
         }
     };
-
     if (onlineStatus === false) {
         return <TicTacToe/>;
     } else if (loading) {
@@ -90,7 +89,7 @@ const Body = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredRestaurant.map(restaurant => (
                     <Link key={restaurant.info.id} to={`/city/delhi/${restaurant.info.id}`}>
-                        <Suspense fallback={"Loading..."}>
+                        <Suspense fallback={<Shimmer/>}>
                         <RestaurantCard resData={restaurant} />
                         </Suspense>
                         
