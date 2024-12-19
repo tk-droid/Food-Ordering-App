@@ -12,6 +12,9 @@ import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
+import { HashRouter as Router } from 'react-router-dom';
+
+
 
 const Grocery = lazy(()=>import("./src/components/Grocery"))
 
@@ -40,27 +43,27 @@ useEffect(()=>{
             path: '/',
             element :  <AppLayout/>,
             children: [{
-                path: '/About',
+                path: 'About',
                 element :  <About/>
             },{
-                path: '/Contact',
+                path: 'Contact',
                 element :  <Contact/>
             },{
                 path: '/',
                 element: <Body/>
             },{
-                path: '/city/delhi/:resId',
+                path: 'city/delhi/:resId',
                 element: <RestaurantMenu/>
             },
             {
-                path: '/grocery',
+                path: 'grocery',
                 element: (<Suspense fallback={<Shimmer/>}>
                     <Grocery/>
                 </Suspense>
                 )
             },
             {
-                path: "/cart",
+                path: "cart",
                 element: <Cart/>
             }
         ],
@@ -69,4 +72,8 @@ useEffect(()=>{
     ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<RouterProvider router={appRouter}/>)
+root.render(
+    <Suspense fallback={<div>Loading...</div>}>
+    <RouterProvider router={appRouter}/>
+    </Suspense>
+    )
