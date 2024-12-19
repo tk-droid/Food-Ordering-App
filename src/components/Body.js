@@ -22,7 +22,7 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", { 
+            const response = await fetch("https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", { 
             headers: { 
                 'x-cors-api-key': 'temp_f87322221c175e9fc2dc965203acc930' 
             } 
