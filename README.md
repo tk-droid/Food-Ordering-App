@@ -11,7 +11,7 @@
   
    C. Open http://localhost:3000 or http://localhost:1234 to view it in your browser.  
   
-## Screenshots  
+## 3. Screenshots  
  
   ### Main Page  
  <img src="src/images/Main page.PNG" alt="MainPage" width="600" height="400">  
