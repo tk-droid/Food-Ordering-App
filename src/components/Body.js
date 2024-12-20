@@ -1,4 +1,4 @@
-// import RestaurantCard from "./RestauranttCard";
+
 import { useState, useEffect, useContext, Suspense } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -17,6 +17,7 @@ const Body = () => {
     const [loading, setLoading] = useState(true);
     const onlineStatus = useOnlineStatus();
     console.log(listOfRestaurants)
+
     useEffect(() => {
         fetchData();
     }, []);
@@ -41,6 +42,8 @@ const Body = () => {
         return <TicTacToe/>;
     } else if (loading) {
         return <Shimmer />;
+    } else if (error) {
+        return <div>{error}</div>
     }
 
     return (
@@ -76,14 +79,6 @@ const Body = () => {
                     >
                         Top Rated Restaurants
                     </button>
-
-                    {/* <div className="flex items-center">
-                        <label className="mr-2">Change User:</label>
-                        <input
-                            className="border border-gray-300 p-2 rounded-md"
-                            onChange={(e) => SetUserName(e.target.value)}
-                        />
-                    </div> */}
                 </div>
             </div>
 
