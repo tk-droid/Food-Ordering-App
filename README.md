@@ -1,17 +1,12 @@
 Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai?pli=1) to see website without CORS Issue.
 
  You can view the live website here : https://foodorderappbytaif.netlify.app/  
-## Scripts that can be used.
-npm start  
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.  
-
-npm test  
-Launches the test runner in the interactive watch mode.  
-
-npm run build  
-Builds the app for production to the build folder.  
-
+ 
+## To Run this Website Locally
+1. Clone this repository
+2. npm run start  
+Open http://localhost:3000 or http://localhost:1234 to view it in your browser.  
+ 
 ## Screenshots  
  
   ### Main Page  
