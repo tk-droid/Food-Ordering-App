@@ -3,3 +3,13 @@
   to = "/index.html"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/app.js"
+  to = "/app.js"
+  status = 200
+
+[[redirects]]
+  from = "/index.css"
+  to = "/index.css"
+  status = 200
