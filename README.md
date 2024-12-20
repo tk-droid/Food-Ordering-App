@@ -3,6 +3,7 @@
  You can view the live website here : https://foodorderappbytaif.netlify.app/  
  
 2. To Run this Website Locally
+   
   A. Clone this repository
 
   B. npm run start
