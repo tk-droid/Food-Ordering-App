@@ -1,4 +1,5 @@
-Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai?pli=1)
+Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai?pli=1) to see website without CORS Issue.
+
  You can view the live website here : https://foodorderappbytaif.netlify.app/  
 ## Scripts that can be used.
 npm start  
