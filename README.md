@@ -1,9 +1,9 @@
-1. Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai?pli=1) to see website without CORS Issue.
+## 1. Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai?pli=1) to see website without CORS Issue.
 
  You can view the live website here : https://foodorderappbytaif.netlify.app/  
  
   
- 2. To Run this Website Locally
+## 2. To Run this Website Locally
    
    A. Clone this repository
 
