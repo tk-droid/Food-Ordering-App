@@ -2,10 +2,10 @@ Add [CROSS-DOMAIN CORS](https://chromewebstore.google.com/detail/cross-domain-co
 
  You can view the live website here : https://foodorderappbytaif.netlify.app/  
  
-## To Run this Website Locally
-1. Clone this repository
-2. npm run start  
-Open http://localhost:3000 or http://localhost:1234 to view it in your browser.  
+ To Run this Website Locally
+  1. Clone this repository
+  2. npm run start  
+  3. Open http://localhost:3000 or http://localhost:1234 to view it in your browser.  
  
 ## Screenshots  
  
