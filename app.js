@@ -8,7 +8,7 @@ import About from "./src/components/About";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-// import Shimmer from "./src/components/Shimmer";
+import Shimmer from "./src/components/Shimmer";
 import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
@@ -45,15 +45,19 @@ useEffect(()=>{
                 {
                 path: 'About',
                 element :  <About/>,
+                errorElement: <Error/>
             },{
                 path: 'Contact',
                 element :  <Contact/>,
+                errorElement: <Error/>
             },{
                 path: '/',
                 element: <Body/>,
+                errorElement: <Error/>
             },{
                 path: 'city/delhi/:resId',
                 element: <RestaurantMenu/>,
+                errorElement: <Error/>
             },
             {
                 path: 'grocery',
@@ -62,9 +66,9 @@ useEffect(()=>{
             {
                 path: "cart",
                 element: <Cart/>,
-            },
-        ],
-        errorElement: <Error/>
+                errorElement: <Error/>
+            }
+        ]
         },
     ])
 

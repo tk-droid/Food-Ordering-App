@@ -42,8 +42,6 @@ const Body = () => {
         return <TicTacToe/>;
     } else if (loading) {
         return <Shimmer />;
-    } else if (error) {
-        return <div>{error}</div>
     }
 
     return (
@@ -68,6 +66,13 @@ const Body = () => {
                         }}>
                         Search
                     </button>
+                    {/* <div className="flex items-center">
+                        <label className="mr-2">Change User:</label>
+                        <input
+                            className="border border-gray-300 p-2 rounded-md"
+                            onChange={(e) => SetUserName(e.target.value)}
+                        />
+                    </div> */}
                 </div>
                 <div className="flex items-center ml-4">
                     <button
