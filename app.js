@@ -13,8 +13,9 @@ import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
+import Grocery from "./src/components/Grocery";
 
-const Grocery = lazy(()=>import("./src/components/Grocery"))
+// const Grocery = lazy(()=>import("./src/components/Grocery"))
 
 const AppLayout = ()=>{
 const [UserName, SetUserName] = useState()
@@ -40,39 +41,38 @@ useEffect(()=>{
         {
             path: '/',
             element :  <AppLayout/>,
-            children: [{
+            children: [
+                {
                 path: 'About',
-                element :  <About/>
+                element :  <About/>,
+                errorElement: <Error/>
             },{
                 path: 'Contact',
-                element :  <Contact/>
+                element :  <Contact/>,
+                errorElement: <Error/>
             },{
                 path: '/',
-                element: <Body/>
+                element: <Body/>,
+                errorElement: <Error/>
             },{
                 path: 'city/delhi/:resId',
-                element: <RestaurantMenu/>
+                element: <RestaurantMenu/>,
+                errorElement: <Error/>
             },
             {
                 path: 'grocery',
-                element: (<Suspense fallback={<Shimmer/>}>
-                    <Grocery/>
-                </Suspense>
-                )
+                element: <Grocery/>,
+                errorElement: <Error/>
             },
             {
                 path: "cart",
-                element: <Cart/>
+                element: <Cart/>,
+                errorElement: <Error/>
             }
-        ],
-            errorElement: <Error/>
+        ]    
         }
     ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-    <Suspense fallback={<div>Loading...</div>}>
-    <RouterProvider router={appRouter}/>
-    </Suspense>
-    )
+root.render(<RouterProvider router={appRouter}/>)
 
