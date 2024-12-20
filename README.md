@@ -4,7 +4,7 @@
  
 2. To Run this Website Locally
   A. Clone this repository
-  B. npm run start  
+  B. npm run start
   C. Open http://localhost:3000 or http://localhost:1234 to view it in your browser.  
  
 ## Screenshots  
