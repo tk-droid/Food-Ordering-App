@@ -19,8 +19,8 @@ return (
     <div className="user-card">
       {UserInfo ? (
         <>
-          <h2>User Name : {UserInfo.login}</h2>
-          <h2>User id : {UserInfo.id}</h2>
+          <h2>GitHub UserName : {UserInfo.login}</h2>
+          
         </>
       ) : (
         <p>Loading...</p>
