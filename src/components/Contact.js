@@ -40,15 +40,6 @@ const Contact = () => {
         </button>
       </form>
 
-      {/* Giphy Attribution */}
-      <p className="mt-2 text-sm text-gray-600">
-        <a 
-          href="https://giphy.com/gifs/monkey-phone-cell-l41lVsYDBC0UVQJCE" 
-          className="text-blue-500 hover:underline"
-        >
-          via GIPHY
-        </a>
-      </p>
     </div>
   )
 }
