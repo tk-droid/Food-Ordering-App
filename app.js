@@ -13,9 +13,7 @@ import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
-import Grocery from "./src/components/Grocery";
-
-// const Grocery = lazy(()=>import("./src/components/Grocery"))
+const Grocery = lazy(()=>import("./src/components/Grocery"))
 
 const AppLayout = ()=>{
 const [UserName, SetUserName] = useState()
@@ -61,7 +59,11 @@ useEffect(()=>{
             },
             {
                 path: 'grocery',
-                element: <Grocery/>,
+                element: (
+                <Suspense fallback={<Shimmer/>}>
+                <Grocery/>
+                </Suspense>
+                ),
             },
             {
                 path: "cart",

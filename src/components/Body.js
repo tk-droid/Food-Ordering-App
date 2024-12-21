@@ -1,12 +1,11 @@
 
-import { useState, useEffect, useContext, Suspense } from "react";
+import { useState, useEffect, useContext, Suspense, useMemo  } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import TicTacToe from "./TicTacToe";
 import UserContext from "../utils/UserContext";
 import React, {lazy} from "react";
-// import RestaurantCard from "./RestauranttCard"
 const RestaurantCard = lazy(()=>import("./RestauranttCard"))
 
 const Body = () => {
@@ -19,7 +18,14 @@ const Body = () => {
     console.log(listOfRestaurants)
 
     useEffect(() => {
+        const cachedData = localStorage.getItem("restaurants");
+        if (cachedData) {
+            setListOfRestaurants(JSON.parse(cachedData));
+            setFilteredRestaurant(JSON.parse(cachedData));
+            setLoading(false);
+          } else {
         fetchData();
+          }
     }, []);
 
     const fetchData = async () => {
@@ -32,14 +38,28 @@ const Body = () => {
           
         });
             const json = await response.json();
-            setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setFilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+           localStorage.setItem("restaurants", JSON.stringify(restaurants)); // Save to cache
+           setListOfRestaurants(restaurants);
+           setFilteredRestaurant(restaurants);
         } catch (error) {
             console.error("Error fetching data:", error);
         } finally {
             setLoading(false);
         }
     };
+
+    const filteredRestaurantMemo = useMemo(() => {
+        return listOfRestaurants.filter((res) =>
+            res.info.name.toLowerCase().includes(searchText.toLowerCase())
+        );
+    }, [searchText, listOfRestaurants]);
+
+    // Memoize top-rated restaurants filter
+    const topRatedRestaurantMemo = useMemo(() => {
+        return listOfRestaurants.filter((res) => res.info.avgRating > 4.3);
+    }, [listOfRestaurants]);
+
     if (onlineStatus === false) {
         return <TicTacToe/>;
     } else if (loading) {
@@ -63,8 +83,7 @@ const Body = () => {
                         data-testid="search-button"
                         className="bg-green-300 text-black px-4 py-2 rounded-r-md hover:bg-green-600 transition"
                         onClick={() => {
-                            const searchFilteredList = listOfRestaurants.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-                            setFilteredRestaurant(searchFilteredList);
+                            setFilteredRestaurant(filteredRestaurantMemo);
                         }}>
                         Search
                     </button>
@@ -80,8 +99,7 @@ const Body = () => {
                     <button
                         className="bg-green-300 px-4 py-2 rounded-md hover:bg-green-600 transition mr-4"
                         onClick={() => {
-                            const filteredList = listOfRestaurants.filter(res => res.info.avgRating > 4.3);
-                            setFilteredRestaurant(filteredList);
+                            setFilteredRestaurant(topRatedRestaurantMemo);
                         }}
                     >
                         Top Rated Restaurants

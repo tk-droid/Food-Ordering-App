@@ -1,14 +1,11 @@
-import { useContext } from "react"
+
 import { CDN_logo } from "../utils/constants"
-import UserContext from "../utils/UserContext"
 import React from "react"
 
-const RestaurantCard = (props)=>{
+const RestaurantCard = React.memo((props)=>{
     const {resData} = props
     console.log(resData)
     const {name,cuisines,avgRating,costForTwo,deliveryTime,cloudinaryImageId } = resData.info
-    const {loggedInUser} = useContext(UserContext)
-
     return (
         <div data-testid="resCard" className="m-4 p-4 w-[250px] rounded-lg hover:bg-green-100">
             <img
@@ -21,6 +18,7 @@ const RestaurantCard = (props)=>{
            <h4>{avgRating}</h4>
            <h4>{costForTwo}</h4>
            <h4>{deliveryTime}</h4>
-           {/* <h4 className="font-bold">User : {loggedInUser}</h4>      */}
-        </div> )}
+        </div>)
+        })
+
 export default RestaurantCard
