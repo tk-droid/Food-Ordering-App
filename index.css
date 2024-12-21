@@ -2,12 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (max-width: 768px) {
-    body {
-      /* Disable mobile styling by applying desktop styles */
-      width: 1024px;
-      margin: 0 auto;
-      font-size: 16px; /* Adjust fonts if needed */
-    }
-  }
   

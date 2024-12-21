@@ -24,12 +24,6 @@ useEffect(()=>{
         name: "Taif k"
     }
     SetUserName(data.name)
-    if (window.innerWidth <= 768) {
-        const metaViewport = document.querySelector('meta[name="viewport"]');
-        if (metaViewport) {
-          metaViewport.setAttribute('content', 'width=1024, initial-scale=1, user-scalable=no');
-        }
-      }
 },[])
         return (
             <Provider store={appStore}>
