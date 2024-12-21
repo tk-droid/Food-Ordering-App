@@ -6,8 +6,8 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import TicTacToe from "./TicTacToe";
 import UserContext from "../utils/UserContext";
 import React, {lazy} from "react";
-import RestaurantCard from "./RestauranttCard"
-// const RestaurantCard = lazy(()=>import("./RestauranttCard"))
+// import RestaurantCard from "./RestauranttCard"
+const RestaurantCard = lazy(()=>import("./RestauranttCard"))
 
 const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -88,7 +88,7 @@ const Body = () => {
                     </button>
                 </div>
             </div>
-
+                   <Suspense fallback={<Shimmer />}>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredRestaurant.map(restaurant => (
                     <Link key={restaurant.info.id} to={`/city/delhi/${restaurant.info.id}`}>
@@ -96,6 +96,7 @@ const Body = () => {
                     </Link>
                 ))}
             </div>
+                </Suspense>
         </div>
     );
 };
