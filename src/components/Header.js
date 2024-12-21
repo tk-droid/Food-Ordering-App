@@ -25,7 +25,17 @@ const Header = ()=>{
                    <li className="px-3"><Link to='/'>Home</Link></li>
                    <li className="px-3"><Link to='/About'>About</Link></li>
                    <li className="px-3"><Link to='/contact'>Contact</Link></li>
-                   <li className="px-3"><Link to="/grocery">Grocery</Link></li>
+
+                   <li className="px-3">
+  <Link 
+    to="/grocery" 
+    className="text-md md:text-xl lg:text-lg  inline-block transform transition-all duration-300 ease-in-out hover:shadow-2xl animate-bounce"
+  >
+    Grocery
+  </Link>
+</li>
+
+                   
                    <li className="px-3"><Link to="/cart">Cart({cartItems.length})</Link></li> 
                    <button className="Login" onClick={()=>{
                      return btnName==="Login" ? setbtnName("Logout"):setbtnName("Login")
